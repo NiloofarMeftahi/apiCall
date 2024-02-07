@@ -1,19 +1,21 @@
-<div
-style="
-display: flex;
-align-items: center;
-justify-content: center;
-height: 100vh;"
->
-  <ol>
-    @for(item of items; track item){
-      <li>
-        <p>{{item.fundName}}</p>
-        <p>{{item.change1m}}</p>
-        <p>{{item.change3m}}</p>
-        <p>{{item.change3y}}</p>
-        
+<div class="container mx-auto ">
+  <div class="border-4 px-5 mx-10 my-10 border-blue-300 rounded-md bg-blue-00 drop-shadow-lg">
+    <ol>
+      <li class="flex justify-between items-center border-b py-2 text-center">
+        <h2 class="flex-1  font-bold">Funding Name</h2>
+        <h2 class="flex-1  font-bold">First Month's Performance</h2>
+        <h2 class="flex-1  font-bold">Third Month's Peformance</h2>
+        <h2 class="flex-1  font-bold">Third Year's Performance</h2>
       </li>
-    }
-  </ol>
+      @for(item of items; track item){
+        <li class="flex justify-between items-center py-2">
+          <p class="flex-1 text-left">{{item.fundName}}</p>
+          <p class="flex-1 text-center">{{item.change1m ? item.change1m : 'Performance does not exist'}}</p>
+          <p class="flex-1 text-center">{{item.change3m ? item.change3m : 'Performance does not exist'}}</p>
+          <p class="flex-1 text-center">{{item.change3y ? item.change3y : 'Performance does not exist'}}</p>
+          
+        </li>
+      }
+    </ol>
+  </div>
 </div>
