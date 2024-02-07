@@ -12,7 +12,8 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'apiCall';
   private http = inject(HttpClient);
-  items: any[] = [];
+  data: any[] = [];
+  displayedData: any[] = [];
   constructor(){
     this.fetchData();
   }
@@ -20,9 +21,18 @@ export class AppComponent {
     this.http
     .get<any[]>('https://ivarpivar.netlify.app/api')
     .subscribe((data)=> {
-      console.log(data);
-      this.items = data[0].data;
-      // console.log(this.items);
+      this.data = data[0].data;
+      this.displayedData = this.data
     });
   }
+
+  filterData(filter: string | null) {
+    if (filter === "Include Performance Data") {
+      this.displayedData = this.data.filter(item => item.change1m || item.change3m || item.change3y);
+      return null;
+    }
+  this.displayedData = this.data
+    return this.data;
+  }
+  
 }
