@@ -1,0 +1,22 @@
+<div class="mx-10 my-10 flex">
+ <button class="border
+    bg-white
+    border-blue-300
+    hover:bg-sky-100  rounded-md p-2 mr-2
+    {{ selectedButton ===  null  ? 'text-black bg-sky-200' : '' }}"
+    (click)="onFilterSelected(null)">
+    All 
+    </button>
+    <button 
+    class="border
+    bg-white
+    border-blue-300
+    hover:bg-sky-100  rounded-md p-2 mr-2
+    {{ selectedButton === 'Include Performance Data' ? 'text-black bg-sky-200' : '' }}"
+  
+    (click)="onFilterSelected('Include Performance Data'); 
+">
+    Include Performance Data 
+    </button>
+    
+  </div>

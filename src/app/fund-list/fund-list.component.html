@@ -1,0 +1,17 @@
+<ol class="fudningList divide-y divide-gray-200">
+    <li class="flex justify-between items-center border-b px-5 py-2 text-center">
+      <h2 class="flex-1  font-bold">Funding Name</h2>
+      <h2 class="flex-1  font-bold">First Month's Performance</h2>
+      <h2 class="flex-1  font-bold">Third Month's Peformance</h2>
+      <h2 class="flex-1  font-bold">Third Year's Performance</h2>
+    </li>
+    @for(item of displayedData; track item){
+      <li class=" flex justify-between items-center px-5 py-2">
+        <p class="flex-1 text-left">{{item.fundName}}</p>
+        <p class="flex-1 text-center">{{item.change1m ? item.change1m : 'N/A'}}</p>
+        <p class="flex-1 text-center">{{item.change3m ? item.change3m : 'N/A'}}</p>
+        <p class="flex-1 text-center">{{item.change3y ? item.change3y : 'N/A'}}</p>
+        
+      </li>
+    }
+  </ol>

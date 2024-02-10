@@ -1,0 +1,12 @@
+
+.fudningList li:nth-child(even) {
+    background-color: #d3e8f7;
+  }
+  
+  
+  .fudningList li:nth-child(odd) {
+    background-color: #f2f2f2; 
+  }
+  
+  
+  
