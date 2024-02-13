@@ -1,4 +1,14 @@
-# ApiCall
+# ** ApiCall **
+
+This Angular project demonstrates fetching and displaying fund data from an API.
+The aim is to display the fund's name and its performance over one month, three months, and three years.
+
+# Usage
+- Upon opening the application, you will see a list of funds, including their name and performance over one month, three months, and three years.
+- Use the filter buttons to include or exclude funds with performance data.
+- A loading message will be displayed while waiting for a response.
+- The error message and its codes will be displayed if an error occurs.
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
 
