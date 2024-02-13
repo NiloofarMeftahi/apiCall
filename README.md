@@ -14,6 +14,11 @@ The aim is to display the fund's name and its performance over one month, three 
 
 ![Filtered Data](https://github.com/NiloofarMeftahi/apiCall/blob/41866bf51f41384e15c887a29b58d0fe3c3c23ac/Figures/Filtered-data.png)
 *Caption: Displaying filtered data*
+![All Data](https://github.com/NiloofarMeftahi/apiCall/blob/fd664fdce23a5e0ac93e108b7f39d6bf013db715/Figures/DataLoading.png)
+*Caption: Data loading message*
+
+![Filtered Data](https://github.com/NiloofarMeftahi/apiCall/blob/fd664fdce23a5e0ac93e108b7f39d6bf013db715/Figures/error.png)
+*Caption: Error message*
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
