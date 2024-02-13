@@ -1,10 +1,19 @@
-<div class="container mx-auto">
-  
-    <app-buttons (filterSelected)="filterData($event)" [selectedButton]="selectedButton">
-    </app-buttons>
-    
-  
+
+@if (error){
+  <!-- If an error occurred, show the error message -->
+  <p class="text-xl h-screen flex items-center justify-center">{{error.toString()}} </p>
+}
+@else if (data.length == 0  ){
+  <!--If still waiting for a response, show the loading message. -->
+  <p class="text-xl h-screen flex items-center justify-center"> Data is Loading </p>
+}
+@else{ 
+  <!-- If no error occurred and the data was loaded, show the table and the filtering buttons. -->
+  <div class="container mx-auto">
+  <app-buttons (filterSelected)="filterData($event)" [selectedButton]="selectedButton"> 
+  </app-buttons>
   <div class="border-4  mx-10 my-10 border-blue-300 rounded-md bg-blue-100 drop-shadow-lg">
     <app-fund-list [displayedData]="displayedData"></app-fund-list>
   </div>
 </div>
+} 

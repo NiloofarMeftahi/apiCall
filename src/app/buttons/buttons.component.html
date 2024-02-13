@@ -1,22 +1,29 @@
 <div class="mx-10 my-10 flex">
+  <!-- 
+    Apply style for the buttons; if selected, the button turns blue.
+    If the selected button is null (the "All" button is chosen),
+    use the toggle button style; else, use the default.
+  -->
  <button class="border
     bg-white
     border-blue-300
     hover:bg-sky-100  rounded-md p-2 mr-2
-    {{ selectedButton ===  null  ? 'text-black bg-sky-200' : '' }}"
+    {{ selectedButton ===  null  ? 'toggledButton' : '' }}"
     (click)="onFilterSelected(null)">
     All 
-    </button>
-    <button 
+  </button>
+  <!-- 
+    If Include Performance Data button is chosen,
+    use the toggle button style; else, use the default.
+  -->
+  <button 
     class="border
     bg-white
     border-blue-300
     hover:bg-sky-100  rounded-md p-2 mr-2
-    {{ selectedButton === 'Include Performance Data' ? 'text-black bg-sky-200' : '' }}"
-  
-    (click)="onFilterSelected('Include Performance Data'); 
-">
+    {{ selectedButton === 'Include Performance Data' ? 'toggledButton' : '' }}"
+    (click)="onFilterSelected('Include Performance Data');">
     Include Performance Data 
-    </button>
+  </button>
     
-  </div>
+</div>

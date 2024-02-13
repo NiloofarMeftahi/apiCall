@@ -9,12 +9,12 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrl: './buttons.component.css'
 })
 export class ButtonsComponent {
-  //@Input() selectedButton = new EventEmitter<string | null>();
+ 
   @Input() selectedButton: string | null = null;
   
   @Output() filterSelected = new EventEmitter<string | null>();
 
-
+// Handle button selection
 onFilterSelected(filter: string | null) {
     this.filterSelected.emit(filter);
 }
