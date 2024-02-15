@@ -3,6 +3,7 @@ import { Component, inject, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { FundListComponent } from './fund-list/fund-list.component';
+import { environment } from './environments/environment';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -26,7 +27,7 @@ export class AppComponent implements OnInit {
   }
   fetchData(){
     this.http
-    .get<any[]>('https://ivarpivar.netlify.app/api')
+    .get<any[]>(environment.apiUrl)
     .subscribe({
       // Handle successful response.
       next: (data) => {

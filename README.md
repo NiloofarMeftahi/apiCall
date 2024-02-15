@@ -1,4 +1,4 @@
-# ** ApiCall **
+# ApiCall
 
 This Angular project demonstrates fetching and displaying fund data from an API.
 The aim is to display the fund's name and its performance over one month, three months, and three years.
