@@ -9,10 +9,10 @@ The aim is to display the fund's name and its performance over one month, three 
 - A loading message will be displayed while waiting for a response.
 - The error message and its codes will be displayed if an error occurs.
 
-![All Data](https://github.com/NiloofarMeftahi/apiCall/blob/41866bf51f41384e15c887a29b58d0fe3c3c23ac/Figures/All-data.png)
+![All Data](https://github.com/NiloofarMeftahi/apiCall/blob/13e3f90c2d7041dbfbe17d255f71f7430a219295/Figures/All-data.png)
 *Caption: Displaying all data*
 
-![Filtered Data](https://github.com/NiloofarMeftahi/apiCall/blob/41866bf51f41384e15c887a29b58d0fe3c3c23ac/Figures/Filtered-data.png)
+![Filtered Data](https://github.com/NiloofarMeftahi/apiCall/blob/13e3f90c2d7041dbfbe17d255f71f7430a219295/Figures/Filtered-data.png)
 *Caption: Displaying filtered data*
 ![All Data](https://github.com/NiloofarMeftahi/apiCall/blob/fd664fdce23a5e0ac93e108b7f39d6bf013db715/Figures/DataLoading.png)
 *Caption: Data loading message*
